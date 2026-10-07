@@ -1,0 +1,38 @@
+{
+  "fixture_notice": "SYNTHETIC TEST DATA. Never a live weather report. Loaded only by tests into temporary runtime directories.",
+  "conditions": {
+    "properties": {
+      "timestamp": "2026-01-10T11:00:00Z",
+      "temperature": {"value": 0, "unitCode": "wmoUnit:degC"},
+      "windSpeed": {"value": 0, "unitCode": "wmoUnit:km_h-1"},
+      "windGust": {"value": null, "unitCode": "wmoUnit:km_h-1"},
+      "textDescription": "SYNTHETIC FIXTURE"
+    }
+  },
+  "hourly": {
+    "properties": {
+      "updateTime": "2026-01-10T10:00:00Z",
+      "periods": [
+        {"startTime": "2026-01-10T11:00:00Z", "endTime": "2026-01-10T12:00:00Z", "shortForecast": "SYNTHETIC prior hour", "temperature": 0},
+        {"startTime": "2026-01-10T12:00:00Z", "endTime": "2026-01-10T13:00:00Z", "shortForecast": "SYNTHETIC containing hour", "temperature": 0},
+        {"startTime": "2026-01-10T13:00:00Z", "endTime": "2026-01-10T14:00:00Z", "shortForecast": "SYNTHETIC next hour", "temperature": null}
+      ]
+    }
+  },
+  "daily": {
+    "properties": {
+      "updateTime": "2026-01-10T10:00:00Z",
+      "periods": [
+        {"startTime": "2026-01-10T06:00:00-06:00", "endTime": "2026-01-10T18:00:00-06:00", "isDaytime": true, "name": "SYNTHETIC Saturday", "temperature": 40},
+        {"startTime": "2026-01-10T18:00:00-06:00", "endTime": "2026-01-11T06:00:00-06:00", "isDaytime": false, "name": "SYNTHETIC Saturday Night", "temperature": 20}
+      ]
+    }
+  },
+  "alerts": {
+    "features": [
+      {"geometry": null, "properties": {"id": "synthetic-expired", "status": "Actual", "event": "SYNTHETIC TEST ADVISORY", "expires": "2026-01-10T11:00:00Z"}},
+      {"geometry": null, "properties": {"id": "synthetic-future", "status": "Actual", "event": "SYNTHETIC TEST WARNING", "expires": "2026-01-10T13:00:00Z"}},
+      {"geometry": null, "properties": {"id": "synthetic-exercise", "status": "Exercise", "event": "DO NOT DISPLAY AS ACTUAL", "expires": "2026-01-11T13:00:00Z"}}
+    ]
+  }
+}

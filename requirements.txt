@@ -1,0 +1,7 @@
+# Direct runtime dependencies validated in Jake's Windows Python 3.12.10 venv.
+# Baseline: pip check clean; compileall clean; 93 tests passed;
+# interactive foundation and single-instance checks confirmed.
+# Full installed-environment snapshot: requirements-validated.txt.
+textual==8.2.8
+httpx==0.28.1
+tzdata==2026.5

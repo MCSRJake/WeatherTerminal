@@ -1,0 +1,50 @@
+/* Phase 4 responsive shell with four independently updated weather panels. */
+Screen {
+    background: #0c1220;
+    color: #e5edf7;
+}
+Header { background: #15243b; }
+Footer { background: #15243b; }
+#clock { padding: 0 1; color: #a6cee8; height: auto; }
+#resize-hint { padding: 0 1; color: #f4c66e; height: auto; }
+#dashboard { padding: 0 1; height: 1fr; }
+#location-status { padding: 1; height: auto; }
+.weather-panel {
+    border: round #405570;
+    background: #121e30;
+    padding: 1;
+    margin-bottom: 1;
+    width: 1fr;
+    height: auto;
+    min-height: 6;
+}
+#alerts-panel { border: round #b99044; }
+#conditions-hourly { layout: vertical; height: auto; }
+#conditions-hourly.wide { layout: horizontal; }
+#conditions-hourly.wide > .weather-panel { margin-right: 1; }
+.muted { color: #adbed2; height: auto; }
+ModalScreen {
+    align: center middle;
+    background: #060b14 85%;
+}
+#location-dialog, #help-dialog {
+    width: 76;
+    max-width: 95%;
+    height: auto;
+    max-height: 90%;
+    border: round #609cd1;
+    background: #142239;
+    padding: 1 2;
+}
+#location-dialog Static, #help-dialog Static {
+    height: auto;
+    margin-bottom: 1;
+}
+.dialog-title { text-style: bold; color: #a6d7ff; }
+.dialog-buttons { height: auto; margin-top: 1; margin-bottom: 1; }
+.dialog-buttons Button { margin-right: 1; }
+#lookup-status { color: #f4c66e; }
+
+/* Phase 4 read-only official source text; selection/table polish is Phase 5. */
+#source-details { width: 90%; max-width: 110; height: 85%; padding: 1 2; background: #15202f; border: round #5da9e9; }
+#detail-text { height: auto; margin-bottom: 1; }

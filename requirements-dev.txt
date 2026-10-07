@@ -1,0 +1,4 @@
+# Direct development dependencies from the validated Windows Python 3.12.10 venv.
+-r requirements.txt
+pytest==9.1.1
+pytest-asyncio==1.4.0
