@@ -4,7 +4,7 @@ An ad-free, keyboard-driven NWS weather dashboard for Windows Terminal and Pytho
 
 **Status:** Phases 1–3 complete. Jake validated the Phase 4 station-pagination fix with clean compilation, **388 passed in 20.09s**, and a functioning live dashboard. The subsequent display-precision patch and its new regressions await execution. Remaining phase gates are described below; this is not finished-product acceptance.
 
-**Author:** Element0, Elemental Informatics  
+**Author:** Element0  
 **Prepared for:** Jake Jenkins
 
 ## Install and start
